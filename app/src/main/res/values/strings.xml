@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Weather Pro</string>
+
+    <string name="about_us_text">
+
+        This App was created as an assignment of the Subject PH 3037 - Mobile Application Development.
+        Yahoo Weather Api has been used to create this App.
+        This App gives the current weather conditions of a city and 5 day forecast of that city.
+        You can change the city by entering city name in the search bar and selecting a suitable city name.
+        The city list is auto filtered for the easy of use.
+        You can View more details of forecast by selecting it.
+        There is a refresh button on the title bar if the information is not loaded properly to refresh.
+        You can change the temperature unit From Celsius to Fahrenheit and vise versa from the simple switch.
+        You can preset you favorite city and your preferred temperature unit from settings menu.
+
+        Special Thanks for Sir Gayan Akmeemana For Guiding through out this project.
+        And to Yoel Nunaz who provided the Tutorial guides to develop this app.
+        Thank You.
+    </string>
+    <string name="default_temp_unit">c</string>
+    <string-array name="availableLocations">
+        <item>Colombo, Srilanka</item>
+        <item>Kalutara, Srilanka</item>
+        <item>Gampaha, Srilanka</item>
+        <item>Kandy, Srilanka</item>
+        <item>Nuwara-eliya, Srilanka</item>
+        <item>Matale, Srilanka</item>
+        <item>Jaffna, Srilanka</item>
+        <item>Mannar, Srilanka</item>
+        <item>Vavniya, Srilanka</item>
+        <item>Mulativu, Srilanka</item>
+        <item>Kilinochchi, Srilanka</item>
+        <item>Galle, Srilanka</item>
+        <item>Matara, Srilanka</item>
+        <item>Hambanthota, Srilanka</item>
+        <item>Kurunegala, Srilanka</item>
+        <item>Puttalam, Srilanka</item>
+        <item>Anuradhapura, Srilanka</item>
+        <item>Polonnaruwa, Srilanka</item>
+        <item>Kegalle, Srilanka</item>
+        <item>Ratnapura, Srilanka</item>
+        <item>Trincomalee, Srilanka</item>
+        <item>Batticalo, Srilanka</item>
+        <item>Ampara, Srilanka</item>
+        <item>London, England</item>
+        <item>Paris, France</item>
+        <item>Rome, Italy</item>
+        <item>Milan, Italy</item>
+        <item>Berlin, Germany</item>
+        <item>Sydney, Australia</item>
+        <item>Delhi, India</item>
+        <item>Chennai, India</item>
+        <item>Mumbai, India</item>
+        <item>Newyork, USA</item>
+        <item>Bangkok, Thailand</item>
+        <item>Dubai, UAE</item>
+        <item>Moscow, Russia</item>
+
+
+    </string-array>
+
+    <string-array name="tempUnits">
+        <item><B>(°C) Celsius   </B></item>
+        <item><B>(°F) Fahrenheit</B></item>
+    </string-array>
+</resources>

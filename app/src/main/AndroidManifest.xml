@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sahan.weatherapp2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/NoTittle">
+        <activity android:name=".main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.sahan.weatherapp2.settings.SettingMenu"
+            android:label="Settings">
+        </activity>
+        <activity
+            android:name="com.example.sahan.weatherapp2.about.AboutActivity"
+            android:label="About This App"
+            android:parentActivityName="com.example.sahan.weatherapp2.main">
+        </activity>
+        <activity
+            android:name="com.example.sahan.weatherapp2.Forecast"
+            android:label="Forecast"
+            android:parentActivityName="com.example.sahan.weatherapp2.main">
+        </activity>
+    </application>
+
+</manifest>

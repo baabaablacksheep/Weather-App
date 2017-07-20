@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <PreferenceCategory
+        android:title="City Details">
+        <EditTextPreference
+            android:key="default_city"
+            android:title="Enter Yor Preferred City"
+            android:summary="You can save any city to load info on startup"
+            android:dialogTitle="Enter Your City" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Temperature Settings"
+        >
+    <ListPreference
+        android:key="temp_unit"
+        android:title="Set Default Temperature Unit"
+        android:dialogTitle="Please Select Your Preferred Temperature Unit"
+        android:entries="@array/temperature_unit_entries"
+        android:entryValues="@array/temperature_values"
+        android:defaultValue="@string/default_temp_unit"
+        android:summary="Set Your default temperature unit"/>
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sahan.weatherapp2.main"
+
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?attr/colorButtonNormal"
+        android:elevation="4dp"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        app:popupTheme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:titleTextColor="#FFFFFF"/>
+
+<ImageView
+    android:id="@+id/backgroundImageView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCC"
+
+    />
+
+<RelativeLayout
+    android:id="@+id/top_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="220dp"
+
+    >
+    <TextView
+        android:id="@+id/locationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Colombo"
+        android:textAlignment="center"
+        android:textColor="@color/colorLocation"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        />
+    <TextView
+        android:id="@+id/temperatureTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:text="27"
+        android:textSize="100dp"
+        android:textStyle="bold"
+        android:padding="0dp"
+        android:layout_marginTop="20dp"
+
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/temperatureTextView"
+        android:layout_alignTop="@id/temperatureTextView"
+        android:layout_marginTop="20dp"
+        >
+    <TextView
+        android:id="@+id/celsiusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="°C"
+        android:textSize="40dp"
+        android:textColor="#FFFFFF"/>
+    <TextView
+        android:id="@+id/tempUnitDivider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" | "
+        android:textSize="40dp"
+        android:textColor="#FFFFFF"
+        android:layout_toRightOf="@id/celsiusTextView"/>
+    <TextView
+        android:id="@+id/fahrenheitTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="°F"
+        android:textSize="40dp"
+        android:textColor="#808080"
+        android:layout_toRightOf="@id/tempUnitDivider"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/weathericonImageView"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:src="@drawable/na"
+        android:layout_below="@id/temperatureTextView"
+        android:layout_marginTop="0dp"
+        />
+    <TextView
+        android:id="@+id/conditionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:text="Cloudy"
+        android:layout_below="@+id/temperatureTextView"
+        android:layout_toRightOf="@id/weathericonImageView"
+        android:layout_marginTop="13dp"
+        />
+
+</RelativeLayout>
+    <ListView
+        android:layout_marginTop="10dp"
+        android:id="@+id/customList"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="10dp"
+        android:layout_below="@id/top_layout"
+        >
+    </ListView>
+
+    <ImageView
+        android:id="@+id/yahoo_icon"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:src="@drawable/yahoo_logo"
+        android:layout_alignParentBottom="true"
+        />
+
+
+</RelativeLayout>
